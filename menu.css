@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    & ul{
+        background-image: linear-gradient(to bottom, skyblue, white);
+        /* background-image: url('./images/shutterstock_1189349521.jpg');
+        height: 700px; */
+        background-size: 100% 100%;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        & li{
+            background-color: transparent;
+        }
+    }
+}
+
+.menuIcon{
+    margin-top: 80px;
+    width: 50%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
+    & a{
+        text-decoration: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    & a:hover{
+        color: white;
+        font-weight: 600;
+    }
+}
+
+.footer{
+    border-top: 2px solid black;
+    padding-top: 10px;
+    margin: 30px 50px;
+}
+
+.card{
+    /* border: 2px solid black; */
+    display: flex;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px 0px;
+
+    & .card-img-wrapper{
+        & img{
+            border-radius: 100%;
+            height: 100px;
+            margin: 20px;
+        }
+    }
+    & .details-card-wrapper{
+        & .veg-symbol{
+            margin-top: 10px;
+            & img{
+                width: 20px;
+            }
+        }
+        & button{
+            padding: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            background-color: transparent;
+            border-radius: 10px;
+            margin: 5px 0px;
+            font-weight: 600;
+        }
+        & button:hover{
+            background-color: white;
+            box-shadow: 2px 2px 2px;
+        }
+    }
+}
+
+.main-card-wrapper{
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.main-title{
+    margin: 0px 30px;
+    font-size: 50px;
+    font-weight: lighter;
+}
